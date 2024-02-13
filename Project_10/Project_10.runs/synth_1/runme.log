@@ -1,0 +1,487 @@
+
+*** Running vivado
+    with args -log UART_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source UART_top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source UART_top.tcl -notrace
+Command: synth_design -top UART_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11952 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 693.930 ; gain = 176.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'UART_top' [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART_top.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'UART' [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART.sv:4]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter DVSR bound to: 326 - type: integer 
+	Parameter FIFO_W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Baud_Gen' [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/Baud_Gen.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'Baud_Gen' (1#1) [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/Baud_Gen.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'UART_rx' [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART_rx.sv:4]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART_rx.sv:48]
+INFO: [Synth 8-6155] done synthesizing module 'UART_rx' (2#1) [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART_rx.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/FIFO.sv:4]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO_ctrl' [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/FIFO_ctrl.sv:4]
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/FIFO_ctrl.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_ctrl' (3#1) [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/FIFO_ctrl.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'Register' [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/Register.sv:4]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Register' (4#1) [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/Register.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/FIFO.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'UART_tx' [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART_tx.sv:4]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART_tx.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'UART_tx' (6#1) [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART_tx.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (7#1) [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'Debounce' [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/Debounce.sv:4]
+	Parameter N bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Debounce' (8#1) [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/Debounce.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'UART_top' (9#1) [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.srcs/sources_1/new/UART_top.sv:4]
+WARNING: [Synth 8-3917] design UART_top has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port an[0] driven by constant 0
+WARNING: [Synth 8-3917] design UART_top has port seg[7] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[4] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[2] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 757.480 ; gain = 240.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 757.480 ; gain = 240.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 757.480 ; gain = 240.547
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Canvas Code Files/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Canvas Code Files/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Canvas Code Files/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/UART_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/UART_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 874.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 874.387 ; gain = 357.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 874.387 ; gain = 357.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 874.387 ; gain = 357.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'UART_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'UART_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'Debounce'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 | 00000000000000000000000000000000
+                   start |                               01 | 00000000000000000000000000000001
+                    data |                               10 | 00000000000000000000000000000010
+                    stop |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'UART_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 | 00000000000000000000000000000000
+                   start |                               01 | 00000000000000000000000000000001
+                    data |                               10 | 00000000000000000000000000000010
+                    stop |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'UART_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                               00 | 00000000000000000000000000000000
+                   wait1 |                               01 | 00000000000000000000000000000011
+                     one |                               10 | 00000000000000000000000000000010
+                   wait0 |                               11 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'Debounce'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 874.387 ; gain = 357.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 27    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module UART_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module Baud_Gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module UART_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module FIFO_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 6     
+Module UART_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+Module Debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design UART_top has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port an[0] driven by constant 0
+WARNING: [Synth 8-3917] design UART_top has port seg[7] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[4] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[2] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[1] driven by constant 1
+WARNING: [Synth 8-3917] design UART_top has port seg[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 874.387 ; gain = 357.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                                  | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------------------------------+-----------+----------------------+--------------+
+|UART_top    | uart_unit/fifo_rx_unit/f_unit/array_reg_reg | Implied   | 4 x 8                | RAM32M x 2   | 
+|UART_top    | uart_unit/fifo_tx_unit/f_unit/array_reg_reg | Implied   | 4 x 8                | RAM32M x 2   | 
++------------+---------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 874.387 ; gain = 357.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 874.387 ; gain = 357.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                                  | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------------------------------+-----------+----------------------+--------------+
+|UART_top    | uart_unit/fifo_rx_unit/f_unit/array_reg_reg | Implied   | 4 x 8                | RAM32M x 2   | 
+|UART_top    | uart_unit/fifo_tx_unit/f_unit/array_reg_reg | Implied   | 4 x 8                | RAM32M x 2   | 
++------------+---------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 874.387 ; gain = 357.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 878.914 ; gain = 361.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 878.914 ; gain = 361.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 878.914 ; gain = 361.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 878.914 ; gain = 361.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 878.914 ; gain = 361.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 878.914 ; gain = 361.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |    24|
+|4     |LUT2   |     8|
+|5     |LUT3   |    42|
+|6     |LUT4   |    45|
+|7     |LUT5   |    15|
+|8     |LUT6   |    30|
+|9     |RAM32M |     4|
+|10    |FDRE   |    82|
+|11    |IBUF   |     3|
+|12    |OBUF   |    21|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+------------+------+
+|      |Instance          |Module      |Cells |
++------+------------------+------------+------+
+|1     |top               |            |   287|
+|2     |  btn_db_unit     |Debounce    |   112|
+|3     |  uart_unit       |UART        |   150|
+|4     |    baud_gen_unit |Baud_Gen    |    30|
+|5     |    fifo_rx_unit  |FIFO        |    26|
+|6     |      c_unit      |FIFO_ctrl_1 |    15|
+|7     |      f_unit      |Register_2  |    11|
+|8     |    fifo_tx_unit  |FIFO_0      |    18|
+|9     |      c_unit      |FIFO_ctrl   |    15|
+|10    |      f_unit      |Register    |     3|
+|11    |    uart_rx_unit  |UART_rx     |    35|
+|12    |    uart_tx_unit  |UART_tx     |    41|
++------+------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 878.914 ; gain = 361.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 878.914 ; gain = 245.074
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 878.914 ; gain = 361.980
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:08 . Memory (MB): peak = 889.230 ; gain = 589.953
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.230 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jambr/OneDrive/Documents/One Drive Stuff/OneDrive/Documents/Spring 2023 Stuff/CSE 5210/Lab/Projects/Project_10/Project_10.runs/synth_1/UART_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file UART_top_utilization_synth.rpt -pb UART_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 10 16:21:49 2023...
